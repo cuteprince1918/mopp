@@ -22,8 +22,8 @@ class university_master extends Model {
         }
     }
 
-    public function getunivercityapi() {
-        $result = university_master::select('*')
+    public function getunivercityBOX() {
+        $result = university_master::select('name','id')
                 ->get();
         return $result;
     }

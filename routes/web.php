@@ -40,6 +40,12 @@ Route::group(['middleware' => 'check-authorized-admin'], function () {
     Route::match(['get', 'post'], 'add-company', ['as' => 'add-company', 'uses' => 'admin\CompanyController@add']);
     Route::match(['get', 'post'], 'edit-company/{id}', ['as' => 'edit-company', 'uses' => 'admin\CompanyController@edit']);
     Route::match(['get', 'post'], 'company-ajaxaction', ['as' => 'company-ajaxaction', 'uses' => 'admin\CompanyController@ajaxaction']);
+    
+    //job crud by admin
+    Route::match(['get', 'post'], 'job', ['as' => 'job', 'uses' => 'admin\JobController@job']);
+    Route::match(['get', 'post'], 'add-job', ['as' => 'add-job', 'uses' => 'admin\JobController@add']);
+    Route::match(['get', 'post'], 'edit-job/{id}', ['as' => 'edit-job', 'uses' => 'admin\JobController@edit']);
+    Route::match(['get', 'post'], 'job-ajaxaction', ['as' => 'job-ajaxaction', 'uses' => 'admin\JobController@ajaxaction']);
 });
 Route::group(['middleware' => 'check-authorized-univercity'], function () {
     

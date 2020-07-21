@@ -23,6 +23,7 @@ $items = Session::get('logindata');
         <li class="{{ ($currRoute == 'admin-dashboard')  ? 'active' : '' }}"><a href="{{ route('admin-dashboard') }}"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
         <li class="{{ ($currRoute == 'univercity' || $currRoute == 'edit-univercity' || $currRoute == 'add-univercity')  ? 'active' : '' }}"><a href="{{ route('univercity') }}"><em class="fa fa-university">&nbsp;</em> Univercity</a></li>
         <li class="{{ ($currRoute == 'company' || $currRoute == 'edit-company' || $currRoute == 'add-company')  ? 'active' : '' }}"><a href="{{ route('company') }}"><em class="fa fa-industry">&nbsp;</em> Company</a></li>
+        <li class="{{ ($currRoute == 'job' || $currRoute == 'edit-job' || $currRoute == 'add-job')  ? 'active' : '' }}"><a href="{{ route('job') }}"><em class="fa fa-suitcase">&nbsp;</em> Job</a></li>
 <!--        <li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Widgets</a></li>
         <li ><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Charts</a></li>
         <li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
